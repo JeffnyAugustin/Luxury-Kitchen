@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    background-color: #1E1E1E;
+    color: white
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #E02B1A;
+}
+
+
+.nom, .date_inscription {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profil_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+}
+
+.nom_date {
+    padding-left: 1rem;
+}
+
+.menu {
+    padding-top: 2%;
+}
+
+.sous_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid white;
+    width: 100%;
+}
+
+.avantages_membres {
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.partager {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+
+.membres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2%;
+  }
+
+.texte_partager {
+    width: 70%;
+}
+
+.donnez_votre_avis {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .faites_nous_connaitre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faites_nous_connaitre, .donnez_votre_avis {
+    width: 30%;
+  }
+
+  #submit {
+    background-color: #8B0000;
+    border: none;
+    width: 50%;
+  }
+  
+    /********************** IPHONE 12 PRO ***********************/
+
+  @media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+
+        .partager {
+            /* justify-content: space-around; */
+            flex-wrap: wrap;
+        }
+        
+        .faites_nous_connaitre, .donnez_votre_avis {
+            width: 87%;
+            padding: 2%;
+        }
+
+        #submit {
+            width: 90%;
+        }
+
+        .product_img {
+            width: 90%;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+        }
+        .sous_menu {
+            flex-direction: column;
+        }
+     }
+
+    /********************** IPHONE 12 PRO ***********************/
+
+
+     /********************** IPAD PRO ***********************/
+
+    @media only screen 
+    and (device-width: 1024px) 
+    and (device-height: 1366px) 
+    and (-webkit-device-pixel-ratio: 1.5) { 
+
+        .partager {
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: center;
+        }
+        #submit {
+            width: 90%;
+        }
+        p {
+            margin-bottom: 3rem;
+        }
+        .partager_text {
+            font-size: 2.75rem;
+        }
+        .membres {
+            /* justify-content: space-between; */
+            justify-content: center;
+        }
+        .faites_nous_connaitre, .donnez_votre_avis {
+            /* width: 30%; */
+            width: 40%;
+        }
+      
+    }
+
+    /********************** IPAD PRO ***********************/
