@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    background-color: #1E1E1E;
+    color: white
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #E02B1A;
+}
+
+.nom, .date_inscription {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profil_content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+}
+
+.nom_date {
+    padding-left: 1rem;
+}
+
+.menu {
+    padding-top: 2%;
+}
+
+.sous_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid white;
+    width: 100%;
+}
+
+.conteneur_liens {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;    
+}
+
+.liens {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+#fleche {
+    width: 14px;
+    height: 25px;
+}
+
+.a_propos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-end;
+  padding-top: 3%;
+}
