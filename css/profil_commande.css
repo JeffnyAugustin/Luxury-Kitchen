@@ -72,3 +72,21 @@ color: rgba(255, 255, 255, 0.5);
     flex-direction: column;
     align-items: center;
 }
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+
+        .menu {
+            display: none;
+        }
+        .historique_des_commandes, .text {
+            text-align: center;
+            padding-top: 2%;
+        }
+        .text {
+            font-size: 15px;
+        }
+
+    }
