@@ -81,7 +81,7 @@
   }
 
 
-button.btn.btn-danger {
+a.btn.btn-danger {
     font-size: 17px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
@@ -91,7 +91,7 @@ button.btn.btn-danger {
 
 }
 
-button.btn.btn-danger:hover {
+a.btn.btn-danger:hover {
     background-color: #E02B1A;
 
 }
