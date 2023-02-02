@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+    body {
+    background-color: #1E1E1E;
+}
+
+
+
+.card {
+    /* border: 2px solid red; */
+    margin: 10px 4px;
+    transition: .6s ease;
+    background-color: #1E1E1E;
+  }
+  
+    .card:hover {
+    transform: scale(1.05);
+  }
+
+.card-deck-wrapper {
+    margin-right: 2px;
+    margin-left: 19px;
+}
+
+.card-deck {
+    margin-right: 3px;
+}
+
+
+
+.card-description {
+
+    background-color: #595959;
+    color: #fff;
+    padding: 10px;
+    height: 135px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-img-top {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+.card-info {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+
+.btn-danger {
+    color: #fff;
+    background-color: #E02B1A;
+    border-color: #E02B1A;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family:'Montserrat', sans-serif; ;
+}
+
+.btn-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.price {
+    margin-top: 7px;
+    font-size: 17px;
+  }
+
+
+button.btn.btn-danger {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 2px 2px 2px 2px #404040;
+    height: 37px;
+    width: 11em;
+
+}
+
+button.btn.btn-danger:hover {
+    background-color: #E02B1A;
+
+}
+
+
+
+
