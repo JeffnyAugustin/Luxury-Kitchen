@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+    *{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+    body {
+    background-color: #1E1E1E;
+}
+
+
+/* Les Titres  */
+    h2 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+    h5{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    }
+
+
+    section{
+    margin-top: 40px;
+  }
+
+  
+  /* Carousel à la une  */
+
+    .card {
+    /* border: 2px solid red; */
+    margin: 10px 4px;
+    transition: .6s ease;
+    background-color: #1E1E1E;
+  }
+  
+    .card:hover {
+    transform: scale(1.05);
+  }
+  
+    .card-block {
+   
+    background-color: #595959;
+    color: #fff;
+    padding: 10px;
+    height: 140px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+  }
+  
+  .scrollcards {
+    background-color: #1E1E1E;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  ::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+      background: transparent;
+  }
+  
+  div.scrollcards .card {
+      display: inline-block;
+      padding: 14px;
+      text-decoration: none;
+      height: auto; 
+      width: 300px;
+      border: none;
+      background-color: #1E1E1E;
+  }
+
+  
+
+  a.bttn {
+    background-color: #E02B1A;
+    border:  3px solid #E02B1A;
+    box-shadow: 2px 2px 2px 2px #343a40;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 14px;
+    margin-bottom: 19px;
+    padding: 4px;
+}
+a.bttn:hover {
+    color: #fff;
+}
+
+.cardprice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.price {
+    margin-top: 20px;
+    margin-right: 12px;
+}
+
+
+p.card-title {
+    font-size: 16px;
+}
+
+/* decouverte */
+
+.card-deck-wrapper {
+    margin-right: 2px;
+    margin-left: 19px;
+}
+
+.card-deck {
+    margin-right: 3px;
+}
+
+.card-description {
+    background-color: #595959;
+    color: #fff;
+    padding: 10px;
+    height: 119px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #E02B1A;
+    border-color: #E02B1A;
+    border-radius: 5px;
+}
+
+.btn-promo {
+    display: flex;
+    justify-content: center;
+}
+
+.card-info {
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+button.btn.btn-danger {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 2px 2px 2px 2px #404040;
+
+}
+
+.card-img-top {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
