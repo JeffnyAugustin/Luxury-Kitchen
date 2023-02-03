@@ -155,7 +155,7 @@ p.card-title {
     font-weight: 600;
 }
 
-button.btn.btn-danger {
+a.btn.btn-danger {
     font-size: 22px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
