@@ -79,3 +79,64 @@ hr {
   align-content: flex-end;
   padding-top: 3%;
 }
+
+.version_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button#submit {
+    width: 30%;
+}
+
+hr {
+    border: 1.2px solid rgba(255, 255, 255, 0.6);
+}
+
+.in_red {
+    color: #E02B1A;
+}
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+
+        .menu {
+            display: none;
+        }
+
+        .conteneur_liens {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        }
+        .liens {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .a_propos {
+            display: flex;
+            /* align-content: flex-end; */
+            align-content: center;
+            align-items: center;
+        }
+        
+        .custom_h1 {
+            font-size: 1.5rem;
+        }
+
+        .version_container {
+            width: 100%;
+        }
+        button#submit {
+            width: 70%;
+        }
+
+}
