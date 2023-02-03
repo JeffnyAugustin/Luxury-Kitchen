@@ -6,10 +6,12 @@ body {
 h3 {
     color: white;
     margin-left: 39px;
+    font-weight: bold;
 }
 
 h5.card-title {
-  font-size: 23px;
+  font-size: 27px;
+  font-weight: bold;
 }
 .card-cart {
 
@@ -28,17 +30,13 @@ h5.card-title {
 
 
   .card-cart img {
-    width: 20%;
+    width: 22%;
     margin-left: 40px;
     border-radius: 10px;
-    height: 350px;
+    height: 400px;
     margin-top: 46px;
 
   }
-
-
-
-  
   
 .card {
     /* border: 2px solid red; */
@@ -62,6 +60,7 @@ h5.card-title {
 
 .card-body {
   font-size: 18px;
+  margin-top: 1vw;
 }
 
 .card-description {
@@ -112,7 +111,7 @@ margin-top: 43px;
 
 .price {
     margin-top: 7px;
-    font-size: 18px;
+    font-size: 22px;
     width: 20%;
   }
 
@@ -128,14 +127,17 @@ a.btn.btn-danger {
 }
 
 .productinfo {
-  font-size: 18px;
+ 
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   width: 100%;
   font-weight: 600;
-  
+  font-size: 22px;
+  margin-top: 50px;
 }
+  
+
 
 .delivertext {
   width: 93%;
@@ -158,7 +160,7 @@ a.btn.btn-danger:hover {
 
 a.btn.btn-dark {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 a.btn.btn-dark:hover {
@@ -169,6 +171,7 @@ a.btn.btn-dark:hover {
 p.card-text-cart {
   text-align: justify;
   margin-right: 8vw;
+  margin-top: 22px;
 }
 
 .btncart {
@@ -180,6 +183,10 @@ p.card-text-cart {
   gap: 60px;
 }
 
+
+p.card-info {
+  font-size: 1.1rem;
+}
 
 
 
