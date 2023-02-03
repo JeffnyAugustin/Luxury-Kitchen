@@ -7,6 +7,10 @@ h3 {
     color: white;
     margin-left: 39px;
 }
+
+h5.card-title {
+  font-size: 23px;
+}
 .card-cart {
 
     display: flex;
@@ -24,36 +28,17 @@ h3 {
 
 
   .card-cart img {
-    width: 40%;
+    width: 20%;
     margin-left: 40px;
     border-radius: 10px;
-    height: 600px;
+    height: 350px;
     margin-top: 46px;
 
   }
 
 
-  @media only screen and (max-width: 768px) {
-    a {
-      display: none;
-    }
-    .card-body {
-      padding: 0.5em 1.2em;
-    }
-    .card-body .card-text {
-      margin: 0;
-    }
-    .card img {
-      width: 50%;
-    }
-  }
-  @media only screen and (max-width: 1200px) {
-    .card img {
-      width: 40%;
-    }
-  }
 
-
+  
   
 .card {
     /* border: 2px solid red; */
@@ -75,7 +60,9 @@ h3 {
     margin-right: 3px;
 }
 
-
+.card-body {
+  font-size: 18px;
+}
 
 .card-description {
 
@@ -97,9 +84,13 @@ h3 {
 .card-info {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    /* text-align: center; */
     font-weight: 600;
     margin-right: 40px;
+}
+
+.offer{
+margin-top: 43px;
 }
 
 
@@ -121,7 +112,8 @@ h3 {
 
 .price {
     margin-top: 7px;
-    font-size: 17px;
+    font-size: 18px;
+    width: 20%;
   }
 
 
@@ -135,7 +127,79 @@ a.btn.btn-danger {
 
 }
 
+.productinfo {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  font-weight: 600;
+  
+}
+
+.delivertext {
+  width: 93%;
+}
+
+
+
 a.btn.btn-danger:hover {
     background-color: #E02B1A;
 
+}
+
+.btn-dark {
+  color: #fff;
+  background-color:  #E02B1A;
+  border-color: #E02B1A;
+  border-radius: 10px;
+}
+
+
+a.btn.btn-dark {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+a.btn.btn-dark:hover {
+  background-color:  #E02B1A;
+}
+
+
+p.card-text-cart {
+  text-align: justify;
+  margin-right: 8vw;
+}
+
+.btncart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 60px;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  a {
+    display: none;
+  }
+  .card-body {
+    padding: 0.5em 1.2em;
+  }
+  .card-body .card-text {
+    margin: 0;
+  }
+  .card img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card img {
+    width: 40%;
+  }
 }
