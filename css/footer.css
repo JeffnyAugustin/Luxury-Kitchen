@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+    background-color: #1E1E1E;
+}
+
+div#row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#left, #center, #right {
+    width: 30%;
+    height: 290px;
+}
+
+#center, #right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_titles{
+    color: white;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    width: 60px;
+    padding-top: 3px;
+    border-bottom: 2px solid red;
+}
+
+.info_styling {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+li {
+    padding-bottom: 5%;
+}
+ul {
+    padding-left: 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    color: red;
+}
+
+#adresse, #number, #email {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+iconify-icon {
+    padding-right: 10px;
+}
+
+#en_bas {
+    padding-top: 20%;
+}
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        .container {
+            /* height: 300px; */
+            height: 590px;
+        }
+          div#row {
+            /* flex-direction: row; */
+            flex-direction: column;
+          }
+          #left, #center, #right {
+            /* width: 30%; */
+            /* height: 290px; */
+            width: 93%;
+            height: 193px;
+          }
+          #left {
+            padding-left: 6%;
+          }
+          #en_bas {
+            /* padding-top: 20%; */
+            padding-top: 55%;
+          }
+          div#center {
+            padding-left: 5%;
+          }
+          div#right {
+            padding-left: 5%;
+          }
+          div#decouvrer_application {
+            padding-top: 5%;
+        }
+     }
