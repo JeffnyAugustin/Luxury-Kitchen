@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+/**** NAVBAR.CSS *****/
+#navbar {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#E02B1A, #930D00);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+#menu_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3%;
+}
+#menu_logo, #menu_right {
+    color: white;
+}
+#menu_logo {
+    font-size: 1.5rem;
+}
+div#menu_center {
+    width: 60%;
+}
+#right_right {
+    display: flex;
+    gap: 40px;
+}
+#sidebar_menu {
+    display: none;
+}
+#menu_icon {
+    display: none;
+}
+
+/************** sidebar ****************/
+#sidebar_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 1092px;
+    background-color: #C81100;
+}
+.main_sidebar_content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#side_nav_links {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    gap: 4%;
+}
+.block_one {
+    display: flex;
+    justify-content: flex-end;
+}
+.block_two, .block_three {
+    margin: 5%;
+}
+#navbar_text {
+    color: rgba(255, 255, 255, 0.63);
+}
+a.menu_text {
+    font-size: 20px;
+}
+#close_icon {
+    margin: 3%;
+    color: white;
+}
+.rejoindre-and-identifier {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10%;
+    margin: 5%;
+}
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.rejoindre {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 44px;
+    background-color: black;
+    color: white;
+    border-radius: 22px;
+}
+.identifier {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 35px;
+    border: 3px solid white;
+    color: white;
+    border-radius: 22px;
+}
+.panier-commande-profil {
+    display: flex;
+    height: 13%;
+    margin: 5%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.panier, .commande, .profil {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 3%;
+}
+.sidebar_socials {
+    display: flex;
+    height: 3%;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+/**** NAVBAR.CSS *****/
+
+/**** FOOTER.CSS *****/
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: white;
+}
+.all {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+}
+div#row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+#right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 290px;
+}
+#center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    height: 290px;
+}
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 290px;
+}
+div#contact_information {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    justify-content: space-around;
+}
+div#decouvrer_application {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 57%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.app {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+div#rejoignez_nous {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
+.footer_titles{
+    color: white;
+}
+.footer_titles::after {
+    content: "";
+    display: block;
+    width: 60px;
+    padding-top: 3px;
+    border-bottom: 2px solid red;
+}
+.info_styling {
+    color: rgba(255, 255, 255, 0.5);
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    align-items: center;
+}
+.fa-facebook, .fa-twitter, .fa-instagram {
+    color: red;
+}
+#adresse, #number, #email {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+iconify-icon {
+    padding-right: 10px;
+}
+/**** FOOTER.CSS *****/
