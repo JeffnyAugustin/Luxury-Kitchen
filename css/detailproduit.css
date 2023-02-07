@@ -9,10 +9,12 @@ h3 {
     font-weight: bold;
 }
 
-h5.card-title {
-  font-size: 27px;
+h5.card-titre {
+  font-size: 28px;
   font-weight: bold;
 }
+
+
 .card-cart {
 
     display: flex;
@@ -22,10 +24,6 @@ h5.card-title {
     background-color: #1e1e1e;
     color: white;
 
-  }
-
-  .card-title {
-    font-weight: bold;
   }
 
 
@@ -201,12 +199,26 @@ p.card-info {
 
 /* Partie Modal */
 
+
+.modal {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+
 .modal-content {
     background-color: #E02B1A;
     color: white;
     height: 481px;
-    width: 49vw;
+    width: 55vw;
     border-radius: 10px;
+    right: 15vw;
 }
 
 .modal-title {
@@ -234,11 +246,12 @@ p.card-info {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
+    gap: 40px;
 }
 
 img.card-img-top.imgmodal {
-    height: 350px;
-    width: 21vw;
+    height: 21vw;
+    width: 23vw;
     border-radius: 10px;
 }
 
@@ -246,9 +259,10 @@ img.card-img-top.imgmodal {
 .modal-footer {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 31px;
     width: 100%;
     border-top: none;
+    height: 42%;
 }
 
 
@@ -260,30 +274,33 @@ img.card-img-top.imgmodal {
 
 .btn-primary {
     background-color: #1e1e1e;
-    border: none;
-    font-size: 14px;
+    border-width : 0;
+    border-style : none;
+    font-size: 18px;
     font-family:'Montserrat', sans-serif;
     border-radius: 25px;
     text-transform: uppercase;
 }
 
-
 .btn-primary:hover {
-    color: #fff;
-    background-color: #1e1e1e;
-    border: none;
-    font-size: 14px;
+  color: #fff;
+  background-color: #1e1e1e;
+  border-color: #1e1e1e;
+  font-size: 18px;
+  border-width : 0;
+  border-style : none;
 }
 
 .btn-primary:onclick {
     color: #fff;
     background-color: #1e1e1e;
-    border: none;
-    font-size: 14px;
+    border-width : 0;
+    border-style : none;
+    font-size: 18px;
 }
 
 
-.card-body.cardmodal {
+.card-modal {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -292,6 +309,15 @@ img.card-img-top.imgmodal {
     height: 100%;
     
 }
+
+.titre {
+  height: 7%;
+}
+
+.pprice {
+  height: 80%;
+}
+
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     color: #fff;
@@ -310,10 +336,19 @@ img.card-img-top.imgmodal {
     opacity: 2.5; 
 }
 
+.close:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  opacity: 2.5;
+}
 
-.p.price.prix {
-   height: 50%;
+h5.card-title {
+  font-size: 30px;
+}
 
+p.price.prix {
+  font-size: 24px;
+  font-family:'Montserrat', sans-serif;
 }
 
 
