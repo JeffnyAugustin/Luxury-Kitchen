@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+@import "../node_modules/bootstrap/scss/functions";
 
 body {
     background-color: #1e1e1e;
