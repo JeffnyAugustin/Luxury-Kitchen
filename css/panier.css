@@ -96,7 +96,7 @@ img {
     flex-direction: column;
     align-content: stretch;
     align-items: flex-start;
-    gap: 174px;
+    gap: 159px;
     width: 44%;
 }
 
@@ -105,7 +105,7 @@ img {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 45px;
+    justify-content: space-between;
 }
 
 .btn-icon {
@@ -120,15 +120,16 @@ img {
 .product-name {
     display: flex;
     flex-direction: row;
-    align-content: stretch;
-    justify-content: flex-start;
-    gap: 197px;
+    justify-content: space-between;
 }
 
 .totalprice {
     display: flex;
     flex-direction: row;
-    gap: 351px;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+
 }
 
 .allofproducts {
@@ -151,8 +152,8 @@ hr{
 .delivery-cart {
     display: flex;
     flex-direction: row;
-    gap: 335px;
     margin-top: 2rem;
+    justify-content: space-between;
 
 }
 
@@ -170,6 +171,32 @@ a.btn.btn-danger {
     color: white;
     font-size: 22px;
 }
+
+
+button.btn.btn-danger.removebtn {
+    background-color: #1E1E1E;
+    border-color: #1E1E1E;
+    color: white;
+}
+button.btn.btn-danger.removebtn:hover {
+    background-color: #1E1E1E;
+    border-color: #1E1E1E;
+    color: white;
+}
+
+button.btn.btn-primary.removebtn {
+    background-color: #1E1E1E;
+    border-color: #1E1E1E;
+    color: white;
+}
+
+button.btn.btn-primary.removebtn:hover {
+    background-color: #1E1E1E;
+    border-color: #1E1E1E;
+    color: white;
+}
+
+
 
 
 
