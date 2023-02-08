@@ -169,7 +169,7 @@ hr{
 }
 
 a.btn.btn-danger {
-    background-color: #E02B1A;
+    background: linear-gradient(#E02B1A, #930D00);
     color: white;
     font-size: 22px;
 }
