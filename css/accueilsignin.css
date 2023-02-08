@@ -36,6 +36,19 @@ li, a {
     list-style: none;
     color: white;
 }
+
+a:hover {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+
+
+
+
+
+
 #menu_nav {
     display: flex;
     align-items: center;
