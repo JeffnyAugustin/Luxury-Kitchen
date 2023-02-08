@@ -63,7 +63,7 @@ h3.titre {
     align-content: flex-end;
     justify-content: flex-end;
     align-items: center;
-    width: 54%;
+    width: 30vw;
 }
 
 .container-product {
@@ -97,15 +97,17 @@ img {
     align-content: stretch;
     align-items: flex-start;
     gap: 159px;
-    width: 44%;
+    width: 20vw;
 }
 
 
 .cart-btn {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
+    gap: 8vw;
+
 }
 
 .btn-icon {
