@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/***************** navbar *******************/
+#navbar {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#E02B1A, #930D00);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+#menu_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3%;
+}
+
+#menu_logo, #menu_right {
+    color: white;
+}
+
+div#menu_center {
+    width: 60%;
+}
+
+#right_right {
+    display: flex;
+    gap: 40px;
+}
+
+#sidebar_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 414px)  {
+    
+    #sidebar_menu {
+        display: block;
+    }
+    div#menu_right {
+        padding-bottom: 15px;
+    }
+    
+    p#navbar_text {
+        position: relative;
+        left: 40px;
+        bottom: 230px;
+    }
+    p#navbar_text {
+        left: 30px;
+        top: 20px;
+    }
+    #sidebar_navigation {
+        height: 20%;
+        margin-top: 50px;
+    }
+    #side_nav_links {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        gap: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px)  {
+
+    #navbar {
+        width: 100%;
+        align-items: center;
+        align-content: space-around;
+    }
+    div#menu_center {
+        display: none;
+    }
+
+
+}
+/***************** navbar *******************/
+
+/************** sidebar ****************/
+
+#sidebar_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*z-index: -10;*/
+    width: 80%;
+    height: 1092px;
+    background-color: #C81100;
+}
+
+#sidebar_navigation {
+    display: flex;
+    flex-direction: row;
+    height: 45%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#side_nav_links {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    gap: 4%;
+}
+
+#navbar_text {
+    color: rgba(255, 255, 255, 0.63);
+}
+
+a.menu_text {
+    font-size: 20px;
+}
+
+#croix {
+    float: right;
+    margin: 5%;
+    color: white;
+}
+
+/************** sidebar ****************/
