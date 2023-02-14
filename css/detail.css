@@ -11,10 +11,12 @@ h3 {
     font-weight: bold;
 }
 
-h5.card-title {
-  font-size: 27px;
+h5.card-titre {
+  font-size: 28px;
   font-weight: bold;
 }
+
+
 .card-cart {
 
     display: flex;
@@ -24,10 +26,6 @@ h5.card-title {
     background-color: #1e1e1e;
     color: white;
 
-  }
-
-  .card-title {
-    font-weight: bold;
   }
 
 
@@ -69,8 +67,8 @@ h5.card-title {
 
     background-color: #595959;
     color: #fff;
-    padding: 10px;
-    height: 135px;
+    padding: 14px;
+    height: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-family: 'Montserrat', sans-serif;
@@ -163,10 +161,19 @@ a.btn.btn-danger:hover {
 a.btn.btn-dark {
   font-weight: 600;
   font-size: 23px;
+  background-color:  #E02B1A;
+  border: none;
 }
 
 a.btn.btn-dark:hover {
   background-color:  #E02B1A;
+  border: none;
+}
+
+.btn-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle {
+    color: #fff;
+    background-color: #E02B1A;
+    border: none;
 }
 
 
@@ -183,6 +190,7 @@ p.card-text-cart {
   align-items: center;
   width: 100%;
   gap: 60px;
+  border: none;
 }
 
 
@@ -190,6 +198,163 @@ p.card-info {
   font-size: 1.1rem;
 }
 
+
+/* Partie Modal */
+
+
+.modal {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+
+.modal-content {
+    background-color: #E02B1A;
+    color: white;
+    height: 481px;
+    width: 55vw;
+    border-radius: 10px;
+    right: 15vw;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.5;
+    font-size: 30px;
+    margin-left: 0vw;
+    text-transform: uppercase;
+
+}
+
+
+.modal .fade{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+img.card-img-top.imgmodal {
+    height: 21vw;
+    width: 23vw;
+    border-radius: 10px;
+}
+
+
+.modal-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+    width: 100%;
+    border-top: none;
+    height: 42%;
+}
+
+
+.modal-header {
+    border-radius: 10px;
+    border-bottom: none;
+
+}
+
+.btn-primary {
+    background-color: #1e1e1e;
+    border-width : 0;
+    border-style : none;
+    font-size: 18px;
+    font-family:'Montserrat', sans-serif;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #1e1e1e;
+  border-color: #1e1e1e;
+  font-size: 18px;
+  border-width : 0;
+  border-style : none;
+}
+
+.btn-primary:onclick {
+    color: #fff;
+    background-color: #1e1e1e;
+    border-width : 0;
+    border-style : none;
+    font-size: 18px;
+}
+
+
+.card-modal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 41px;
+    height: 100%;
+    
+}
+
+.titre {
+  height: 7%;
+}
+
+.pprice {
+  height: 80%;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+    border: none;
+}
+
+.close {
+    float: right;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 0.5;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 0 #fff;
+    opacity: 2.5; 
+}
+
+.close:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  opacity: 2.5;
+}
+
+h5.card-title {
+  font-size: 30px;
+}
+
+p.price.prix {
+  font-size: 24px;
+  font-family:'Montserrat', sans-serif;
+}
+
+
+/* Responsive */
 
 
 

@@ -21,7 +21,7 @@
    <div class="card-cart">
       <img src="images/accessoire/accessoire1.png" class="card-img-top" alt="...">
       <div class="card-body">
-         <h5 class="card-title">Poêle rouge manche amovible</h5>
+         <h5 class="card-titre">Poêle rouge manche amovible</h5>
          <p class="card-text-cart">Son pouvoir anti-adhésif renforcé va vous permettre de cuire et saisir sans risque
             toutes sortes d’aliments : viandes, poissons, légumes, etc. Les poêles Tentation résistent aux rayures et
             aux hautes températures grâce à leur épaisseur de haute qualité. Tentation résistent aux rayures.Son pouvoir
@@ -35,13 +35,52 @@
             <p class="price">55,00€</p>
          </div>
          <div class="btncart">
-            <a href="" class="btn btn-dark">Ajouter au panier</a>
-            <a href="" class="btn btn-dark">Acheter maintenant</a>
+            <a href="panier.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Ajouter au
+               panier</a>
+            <a href="panier.html" class="btn btn-dark">Acheter maintenant</a>
          </div>
-
       </div>
    </div>
    <br>
+
+
+   <!-- Button trigger modal -->
+   <section class="popup">
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">Article ajouté avec succès au panier !</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  <div class="modal-img">
+                     <img src="images/accessoire/accessoire1.png" class="card-img-top  imgmodal" alt="image accessoire">
+                  </div>
+                  <div class="card-modal">
+                     <div class="titre">
+                        <h5 class="card-title">Poêle rouge manche amovible</h5>
+                     </div>
+                     <div class="pprice">
+                        <p class="price prix">55,00€</p>
+                     </div>
+                     <div class="modal-footer">
+                        <a href="panier.html" class="btn btn-primary">Voir le panier</a>
+                        <a href="" class="btn btn-primary">Aller au paiement</a>
+                     </div>
+                  </div>
+               </div>
+
+
+            </div>
+         </div>
+      </div>
+   </section>
 
    <section class="offer">
       <h3>Offres similaires</h3>
