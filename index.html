@@ -17,6 +17,7 @@
 
 <body>
 
+    <!-----------------------------------------------------Partie NAVBAR -->
     <nav>
         <div id="navbar">
             <div id="menu_left">
@@ -24,41 +25,84 @@
             </div>
             <div id="menu_center">
                 <ul id="menu_nav">
-                    <li><a href="poele.html">POÊLES</a></li>
-                    <li><a href="verres.html">VERRES</a></li>
+                    <li><a href="">POÊLES</a></li>
+                    <li><a href="">VERRES</a></li>
                     <li><a href="">ACCESSOIRES</a></li>
                     <li><a href="">COUVERTS</a></li>
-                    <li><a href="assiettes.html">ASSIETTES</a></li>
+                    <li><a href="">ASSIETTES</a></li>
                     <li><a href="">MOULES ET PLAQUES</a></li>
                 </ul>
             </div>
             <div id="menu_right">
                 <div id="right_right">
-                    <iconify-icon icon="ion:bag-handle-outline" width="40" height="40"></iconify-icon>
-                    <a href="#" class="user" data-toggle="modal" data-target="#exampleModal">
-                        <iconify-icon icon="ion:person-circle-outline" width="40" height="40"></iconify-icon></a>
-                    <iconify-icon icon="ion:menu" width="40" height="40"></iconify-icon>
+                    <a href="paniervide.html"><iconify-icon icon="ion:bag-handle-outline" width="40" height="40" class="show_not"></iconify-icon></a>
+                    <a href="login.html" class="user" data-toggle="modal" data-target="#exampleModal"><iconify-icon
+                            icon="ion:person-circle-outline" width="40" height="40" class="show_not"></iconify-icon></a>
+                    <iconify-icon icon="ion:menu" width="40" height="40" id="menu_icon"></iconify-icon>
                 </div>
             </div>
         </div>
     </nav>
-
-    <!--  
+    <!--------------------------------------------------------------------- PARTIE SIDEBAR ------------------------------------------------->
     <div id="sidebar_menu">
-        <iconify-icon id="croix" icon="ion:close-outline" style="color: white;" width="50" height="50"></iconify-icon>
-        <div id="sidebar_navigation">
-            <ul id="side_nav_links">
-                <li><a class="menu_text" href="">POÊLES</a></li>
-                <li><a class="menu_text" href="">VERRES</a></li>
-                <li><a class="menu_text" href="">ACCESSOIRES</a></li>
-                <li><a class="menu_text" href="">COUVERTS</a></li>
-                <li><a class="menu_text" href="">ASSIETTES</a></li>
-                <li><a class="menu_text" href="">MOULES ET PLAQUES</a></li>
-            </ul>
-            <p id="navbar_text">Devenez membre pour accéder au meilleur des produits.</p>
+        <div class="main_sidebar_content">
+            <div class="block_one">
+                <iconify-icon id="close_icon" icon="ion:close-outline" style="color: white;" width="50"
+                    height="50"></iconify-icon>
+            </div>
+            <div class="block_two">
+                <div id="sidebar_navigation">
+                    <ul id="side_nav_links">
+                        <li><a class="menu_text" href="">POÊLES</a></li>
+                        <li><a class="menu_text" href="">VERRES</a></li>
+                        <li><a class="menu_text" href="">ACCESSOIRES</a></li>
+                        <li><a class="menu_text" href="">COUVERTS</a></li>
+                        <li><a class="menu_text" href="">ASSIETTES</a></li>
+                        <li><a class="menu_text" href="">MOULES ET PLAQUES</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block_three">
+                <p id="navbar_text">Devenez membre pour accéder au meilleur des produits.</p>
+            </div>
+            <div class="rejoindre-and-identifier">
+                <div class="rejoindre">
+                    <button id="rejoindre">Nous rejoindre</button>
+                </div>
+                <div class="identifier">
+                    <button id="identifier">S'identifier</button>
+                </div>
+            </div>
+            <div class="panier-commande-profil">
+                <div class="panier">
+                    <iconify-icon icon="ion:bag-handle-outline" style="color: white;" width="30"
+                        height="30"></iconify-icon>
+                    <h2>Panier</h2>
+                </div>
+                <div class="commande">
+                    <iconify-icon icon="ion:cart-outline" style="color: white;" width="30" height="30"></iconify-icon>
+                    <h2>Commande</h2>
+                </div>
+                <div class="profil">
+                    <iconify-icon icon="ion:person-circle-outline" style="color: white;" width="30"
+                        height="30"></iconify-icon>
+                    <h2>Profil</h2>
+                </div>
+            </div>
+            <div class="sidebar_socials">
+                <div class="socials">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                </div>
+                <div class="socials">
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                </div>
+                <div class="socials">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </div>
+            </div>
         </div>
-     </div>
--->
+    </div>
+
 
     <!-- partie pop-up -->
     <section class="popup">
@@ -74,7 +118,7 @@
                     </div>-->
                     <div class="modal-body">
                         <div class="grpbtn">
-                            <a href="#" class="btn btn-primary">Identifiez-vous</a>
+                            <a href="login.html" class="btn btn-primary">Identifiez-vous</a>
                         </div>
                         <div class="grptext">
                             <p class="whitetext">Nouveau client ? <a href="#" class="new-text">Commencez-ici</a></p>
@@ -85,6 +129,7 @@
         </div>
 
         <!-- La vie est belle -->
+
 
     </section>
 
@@ -123,7 +168,7 @@
                     <div class="card">
                         <img class="card-img-top" src="images/accessoire/ustensile3.jpg" alt="Card image ustensile">
                         <div class="card-description">
-                            <p class="card-info">SOLDES ! Ustensiles</p>
+                            <p class="card-info">SOLDES ! Ustensiles cuisine</p>
                             <div class="btn-promo">
                                 <a href="#" class="btn btn-danger">J'en profite !</a>
                             </div>
@@ -134,7 +179,7 @@
                     <div class="card">
                         <img class="card-img-top" src="images/verres/verre2.webp" alt="Card image verre">
                         <div class="card-description">
-                            <p class="card-info">SOLDES ! Verres</p>
+                            <p class="card-info">SOLDES ! Verres de Table</p>
                             <div class="btn-promo">
                                 <a href="#" class="btn btn-danger">J'en profite !</a>
                             </div>
@@ -410,6 +455,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
