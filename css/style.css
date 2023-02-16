@@ -18,6 +18,8 @@
 
     body {
     background-color: #1E1E1E;
+    width: 100vw;
+    height: 100vh;
 }
 
 
@@ -185,7 +187,19 @@ button {
     align-items: center;
     justify-content: space-around;
     color: white;
-}                            
+}       
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    color: white !important;
+}
+
+.fa-2xl {
+    font-size: 2em;
+    line-height: normal;
+    vertical-align: -0.1875em;
+}
+
+
 /*********** MEDIA QUERY *************/
 
 /* Mobile Under 250px */
@@ -286,6 +300,15 @@ button {
     #menu_icon {
         display: none;
     }
+
+    #menu_logo {
+    font-size: 1.3rem;
+    }
+    #menu_nav {
+    
+    font-size: 16px;
+    }
+    
 }
 
 
