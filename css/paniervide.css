@@ -15,8 +15,13 @@
     background-color: #1E1E1E;
 }
 
+
 .together {
     background-color: #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
 }
 
 .card {
@@ -27,6 +32,7 @@
     flex-wrap: nowrap;
     align-items: center;
     border: none;
+    gap: 12px;
 }
 
 
@@ -57,12 +63,21 @@ p.card-text {
     
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+/* Bouton découvrir */
+
 a.btn.btn-primary {
     background-color: #D9D9D9;
     color: #1e1e1e;
     width: 33%;
     font-size: 20px;
-    margin-top: 1em;
+    margin-top: 1.5em;
     border-radius: 10px;
 
 }
@@ -74,9 +89,3 @@ a.btn.btn-primary:hover {
     font-size: 20px
 }
 
-.card-body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-}
