@@ -5,9 +5,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-   <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
    <link rel="stylesheet" href="/css/detail.css">
@@ -16,7 +16,124 @@
 </head>
 
 <body>
+   <!-----------------------------------------------------Partie NAVBAR ---------------------------------------------------------------->
+   <nav>
+      <div id="navbar">
+         <div id="menu_left">
+            <h1 id="menu_logo">LUXURY KITCHEN</h1>
+         </div>
+         <div id="menu_center">
+            <ul id="menu_nav">
+               <li><a href="">POÊLES</a></li>
+               <li><a href="">VERRES</a></li>
+               <li><a href="">ACCESSOIRES</a></li>
+               <li><a href="">COUVERTS</a></li>
+               <li><a href="">ASSIETTES</a></li>
+               <li><a href="">MOULES ET PLAQUES</a></li>
+            </ul>
+         </div>
+         <div id="menu_right">
+            <div id="right_right">
+               <a href="paniervide.html"><iconify-icon icon="ion:bag-handle-outline" width="40" height="40"
+                     class="show_not"></iconify-icon></a>
+               <a href="login.html" class="user" data-toggle="modal" data-target="#exampleModal"><iconify-icon
+                     icon="ion:person-circle-outline" width="40" height="40" class="show_not"></iconify-icon></a>
+               <iconify-icon icon="ion:menu" width="40" height="40" id="menu_icon"></iconify-icon>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!--------------------------------------------------------------------- PARTIE SIDEBAR ------------------------------------------------->
+   <div id="sidebar_menu">
+      <div class="main_sidebar_content">
+         <div class="block_one">
+            <iconify-icon id="close_icon" icon="ion:close-outline" style="color: white;" width="50"
+               height="50"></iconify-icon>
+         </div>
+         <div class="block_two">
+            <div id="sidebar_navigation">
+               <ul id="side_nav_links">
+                  <li><a class="menu_text" href="">POÊLES</a></li>
+                  <li><a class="menu_text" href="">VERRES</a></li>
+                  <li><a class="menu_text" href="">ACCESSOIRES</a></li>
+                  <li><a class="menu_text" href="">COUVERTS</a></li>
+                  <li><a class="menu_text" href="">ASSIETTES</a></li>
+                  <li><a class="menu_text" href="">MOULES ET PLAQUES</a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="block_three">
+            <p id="navbar_text">Devenez membre pour accéder au meilleur des produits.</p>
+         </div>
+         <div class="rejoindre-and-identifier">
+            <div class="rejoindre">
+               <button id="rejoindre">Nous rejoindre</button>
+            </div>
+            <div class="identifier">
+               <button id="identifier">S'identifier</button>
+            </div>
+         </div>
+         <div class="panier-commande-profil">
+            <div class="panier">
+               <iconify-icon icon="ion:bag-handle-outline" style="color: white;" width="30" height="30"></iconify-icon>
+               <h2>Panier</h2>
+            </div>
+            <div class="commande">
+               <iconify-icon icon="ion:cart-outline" style="color: white;" width="30" height="30"></iconify-icon>
+               <h2>Commande</h2>
+            </div>
+            <div class="profil">
+               <iconify-icon icon="ion:person-circle-outline" style="color: white;" width="30"
+                  height="30"></iconify-icon>
+               <h2>Profil</h2>
+            </div>
+         </div>
+         <div class="sidebar_socials">
+            <div class="socials">
+               <i class="fa-brands fa-facebook fa-2xl"></i>
+            </div>
+            <div class="socials">
+               <i class="fa-brands fa-twitter fa-2xl"></i>
+            </div>
+            <div class="socials">
+               <i class="fa-brands fa-instagram fa-2xl"></i>
+            </div>
+         </div>
+      </div>
+   </div>
 
+
+   <!-- partie pop-up -->
+   <section class="popup">
+
+      <!---------------------------------------------Modal ---------------------------------------------------->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog piou">
+            <div class="modall-content">
+               <!-- <div class="modal-header"> 
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                           </button>
+                        </div>-->
+               <div class="modall-body">
+                  <div class="grpbtn">
+                     <a href="login.html" class="button btn-secondary">Identifiez-vous</a>
+                  </div>
+                  <div class="grptext">
+                     <p class="whitetext">Nouveau client ? <a href="#" class="new-text">Commencez-ici</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Fin Pop-up -->
+
+   <br>
+
+
+   <!-- Partie description produit  -->
 
    <div class="card-cart">
       <img src="images/accessoire/accessoire1.png" class="card-img-top" alt="...">
@@ -35,7 +152,7 @@
             <p class="price">55,00€</p>
          </div>
          <div class="btncart">
-            <a href="panier.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Ajouter au
+            <a href="panier.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModall">Ajouter au
                panier</a>
             <a href="panier.html" class="btn btn-dark">Acheter maintenant</a>
          </div>
@@ -45,10 +162,10 @@
 
 
    <!-- Button trigger modal -->
-   <section class="popup">
+   <section class="popup description produit">
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      <div class="modal fade" id="exampleModall" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
          aria-hidden="true">
          <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -85,62 +202,75 @@
    <section class="offer">
       <h3>Offres similaires</h3>
       <div class="card-deck-wrapper">
-         <div class="card-deck">
-            <div class="card">
-               <img class="card-img-top" src="images/accessoire/accessoire1.png" alt="Card image">
-               <div class="card-description">
-                  <p class="card-info">Kit 4 Poêles Tentation rouge avec manche amovible</p>
+         <div class="col-12 d-flex flex-wrap">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+               <div class="card">
+                  <img class="card-img-top" src="images/accessoire/accessoire1.png" alt="Card image">
+                  <div class="card-description">
+                     <p class="card-info">Kit 4 Poêles Tentation rouge avec manche amovible</p>
+                  </div>
                </div>
             </div>
-            <div class="card">
-               <img class="card-img-top" src="images/accessoire/accessoire7.jpg" alt="Card image poele">
-               <div class="card-description">
-                  <p class="card-info">Set 3 poêles anti-adhésives et manche amovible</p>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+               <div class="card">
+                  <img class="card-img-top" src="images/accessoire/accessoire7.jpg" alt="Card image poele">
+                  <div class="card-description">
+                     <p class="card-info">Set 3 poêles anti-adhésives et manche amovible</p>
+                  </div>
                </div>
             </div>
-            <div class="card">
-               <img class="card-img-top" src="images/accessoire/accessoire6.jpg" alt="Card image poele">
-               <div class="card-description">
-                  <p class="card-info">Set 3 poêles anti-adhésives et manche amovible</p>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+               <div class="card">
+                  <img class="card-img-top" src="images/accessoire/accessoire6.jpg" alt="Card image poele">
+                  <div class="card-description">
+                     <p class="card-info">Set 3 poêles anti-adhésives et manche amovible</p>
+                  </div>
                </div>
             </div>
-            <div class="card">
-               <img class="card-img-top" src="images/accessoire/accessoire3.webp" alt="Card image poele">
-               <div class="card-description">
-                  <p class="card-info">Plat à Paëlla Induction Inox 36 cm Anti-adhérent</p>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+               <div class="card">
+                  <img class="card-img-top" src="images/accessoire/accessoire3.webp" alt="Card image poele">
+                  <div class="card-description">
+                     <p class="card-info">Plat à Paëlla Induction Inox 36 cm Anti-adhérent</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+               <div class="card">
+                  <img class="card-img-top" src="images/accessoire/accessoire9.webp" alt="Card image poele">
+                  <div class="card-description">
+                     <p class="card-info">Crêpière Poêle Pancake Surface Anti-Adhésive</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+               <div class="card">
+                  <img class="card-img-top" src="images/accessoire/accessoire12.jpg" alt="Card image poele">
+                  <div class="card-description">
+                     <p class="card-info">Poêle à crêpe anti-adhésive</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+               <div class="card">
+                  <img class="card-img-top" src="images/accessoire/accessoire2.webp" alt="Card image poele">
+                  <div class="card-description">
+                     <p class="card-info">Wok avec revêtement 28 cm</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+               <div class="card">
+                  <img class="card-img-top" src="images/accessoire/accessoire5.webp" alt="Card image poele">
+                  <div class="card-description">
+                     <p class="card-info">Poêle Ingenio XL Force Pannen:xExtr</p>
+                  </div>
                </div>
             </div>
          </div>
       </div>
       <hr>
-      <div class="card-deck-wrapper">
-         <div class="card-deck">
-            <div class="card">
-               <img class="card-img-top" src="images/accessoire/accessoire9.webp" alt="Card image poele">
-               <div class="card-description">
-                  <p class="card-info">Crêpière Poêle Pancake Surface Anti-Adhésive</p>
-               </div>
-            </div>
-            <div class="card">
-               <img class="card-img-top" src="images/accessoire/accessoire12.jpg" alt="Card image poele">
-               <div class="card-description">
-                  <p class="card-info">Poêle à crêpe anti-adhésive</p>
-               </div>
-            </div>
-            <div class="card">
-               <img class="card-img-top" src="images/accessoire/accessoire2.webp" alt="Card image poele">
-               <div class="card-description">
-                  <p class="card-info">Wok avec revêtement 28 cm</p>
-               </div>
-            </div>
-            <div class="card">
-               <img class="card-img-top" src="images/accessoire/accessoire5.webp" alt="Card image poele">
-               <div class="card-description">
-                  <p class="card-info">Poêle Ingenio XL Force Pannen:xExtr</p>
-               </div>
-            </div>
-         </div>
-      </div>
+
 
    </section>
 

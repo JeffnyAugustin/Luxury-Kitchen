@@ -454,7 +454,7 @@ h5.card-title {
     transition: .6s ease;
     background-color: #1E1E1E;
     width: 90%;
-    height: 65vh;
+    height: 70vh;
     }
   
     .card:hover {
@@ -663,7 +663,7 @@ a.btn.btn-danger:hover {
     }
 
     .card-info {
-    font-size: 15px;
+    font-size: 20px;
 
     }
 
