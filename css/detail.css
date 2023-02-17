@@ -3,6 +3,8 @@
 
 body {
     background-color: #1e1e1e;
+    width: 100vw;
+    height: 100vh;
 }
 
 h3 {
@@ -17,6 +19,433 @@ h5.card-titre {
 }
 
 
+
+/* Partie Navbar */ 
+
+
+/***************** navbar *******************/
+#navbar {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#E02B1A, #930D00);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+#menu_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3%;
+    font-size: 18px;
+}
+#menu_logo, #menu_right {
+    color: white;
+}
+
+#menu_logo {
+    font-size: 2.3rem;
+}
+
+div#menu_center {
+    width: 60%;
+}
+#right_right {
+    display: flex;
+    gap: 40px;
+}
+#sidebar_menu {
+    display: none;
+}
+#menu_icon {
+    display: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/************** sidebar ****************/
+
+
+#sidebar_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 1092px;
+    background-color: #C81100;
+    z-index: 3;
+}
+.main_sidebar_content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#side_nav_links {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    gap: 4%;
+}
+.block_one {
+    display: flex;
+    justify-content: flex-end;
+}
+.block_two, .block_three {
+    margin: 5%;
+}
+#navbar_text {
+    color: rgba(255, 255, 255, 0.63);
+}
+a.menu_text {
+    font-size: 20px;
+}
+#close_icon {
+    margin: 3%;
+    color: white;
+}
+
+.panier-commande-profil h2 {
+    font-size: 24px;
+}
+
+
+.rejoindre-and-identifier {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10%;
+    margin: 5%;
+}
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.rejoindre {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 44px;
+    background-color: black;
+    color: white;
+    border-radius: 22px;
+}
+.identifier {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 35px;
+    border: 3px solid white;
+    color: white;
+    border-radius: 22px;
+}
+.panier-commande-profil {
+    display: flex;
+    height: 13%;
+    margin: 5%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.panier, .commande, .profil {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 3%;
+}
+.sidebar_socials {
+    display: flex;
+    height: 3%;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+
+}      
+
+
+
+
+/*********** MEDIA QUERY *************/
+
+/* Mobile Under 250px */
+@media (max-width: 250px){
+    .panier-commande-profil {
+        width: 90%;
+        height: 18%;
+    }
+    .panier, .commande, .profil {
+        font-size: 12px;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+@media (max-width:767px) {
+    div#menu_center {
+        display: none;
+    }
+    #sidebar_menu.active {
+        display: block;
+    }
+    #sidebar_navigation {
+        height: 20%;
+    }
+    #side_nav_links {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        gap: 10%;
+    }
+    .show_not {
+        display: none;
+    }
+    #menu_icon {
+        display: contents;
+    }
+    li {
+        margin-top: 1em;
+    }
+    #navbar_text {
+        width: 90%;
+    }
+}
+
+/* Ipad Mini to ipad */
+@media screen and (min-width:768px) and (max-width:991px){
+    #navbar {
+        width: 100%;
+        align-items: center;
+        align-content: space-around;
+    }
+    div#menu_center {
+        display: none;
+    }
+    #menu_icon {
+        display: contents;
+    }
+    #sidebar_menu.active {
+        display: block;
+        width: 60%;
+    }
+}
+
+/* Ipad et Mini Ordi */
+@media screen and (min-width:992px) and (max-width:1199px) {
+    #navbar {
+        width: 100%;
+        align-items: center;
+        align-content: space-around;
+    }
+    #menu_icon {
+        display: contents;
+    }
+    #sidebar_menu.active {
+        display: block;
+        width: 35%;
+    }
+    #menu_center {
+        display: none;
+    }
+}
+/* Ordi to UP */
+@media screen and (min-width: 1200px) {
+    #navbar {
+        width: 100%;
+        align-items: center;
+        align-content: space-around;
+    }
+    #menu_icon {
+        display: contents;
+    }
+    #sidebar_menu {
+        display: none;
+    }
+    #menu_icon {
+        display: none;
+    }
+}
+
+
+
+/* Partie Modal pour s'identifier */
+
+#exampleModal{
+    position: fixed;
+    top: 42px;
+    left: 31vw;
+    display: none;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+
+.modal-dialog.piou {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color:  #595959;
+    border-radius: 10px;
+    height: 14vh;
+    width: 20vw;
+    align-items: center;
+
+
+}
+
+
+.modall-content {
+    background-color:  #595959;
+    color: white;
+    border-radius: 10px;
+    right: 15vw;
+}
+
+p.whitetext {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a.new-text {
+    color: #E02B1A;
+    font-weight: 800;
+
+}
+
+#exampleModal{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.modall-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 11px;
+}
+
+img.card-img-top.imgmodal {
+    height: 21vw;
+    width: 23vw;
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-radius: 10px;
+    border-bottom: none;
+
+}
+
+.btn-secondary{
+    background-color: #E02B1A;
+    border-color: #E02B1A;
+    border-width : 0;
+    border-style : none;
+    font-size: 18px;
+    font-family:'Montserrat', sans-serif;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #E02B1A;
+    border-color: #E02B1A;
+    font-size: 18px;
+    border-width : 0;
+    border-style : none;
+}
+
+.btn-secondary:onclick {
+    color: #fff;
+    background-color: #E02B1A;
+    border-width : 0;
+    border-style : none;
+    font-size: 18px;
+}
+
+
+.card-modal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 41px;
+    height: 100%;
+    
+}
+
+.titre {
+    height: 7%;
+}
+
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+    border: none;
+}
+
+.close {
+    float: right;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 0.5;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 0 #fff;
+    opacity: 2.5; 
+}
+
+.close:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    opacity: 2.5;
+    }
+
+h5.card-title {
+    font-size: 30px;
+}
+
+
+
+/* Partie Description produit */
+
+
 .card-cart {
 
     display: flex;
@@ -26,18 +455,18 @@ h5.card-titre {
     background-color: #1e1e1e;
     color: white;
 
-  }
+    }
 
 
-  .card-cart img {
+    .card-cart img {
     width: 22%;
     margin-left: 40px;
     border-radius: 10px;
     height: 400px;
     margin-top: 46px;
 
-  }
-  
+    }
+    
 .card {
     /* border: 2px solid red; */
     margin: 10px 4px;
@@ -199,10 +628,10 @@ p.card-info {
 }
 
 
-/* Partie Modal */
+/* Partie Modal description produit*/
 
 
-.modal {
+#exampleModall {
   position: fixed;
   top: 100px;
   left: 0;
