@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -35,53 +36,118 @@ a:hover {
 .test:hover::after {
     width: 6rem;
 }
+=======
+body {
+    margin: 0;
+    background-color: #1E1E1E;
+    color: white
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #E02B1A;
+}
+
+
+>>>>>>> f8bb499 (merge etape 1)
 .nom, .date_inscription {
     color: white;
     font-family: 'Montserrat', sans-serif;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f8bb499 (merge etape 1)
 .profil_content {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 2%;
 }
+<<<<<<< HEAD
 .nom_date {
     padding-left: 1rem;
 }
 .menu {
     padding-top: 2%;
 }
+=======
+
+.nom_date {
+    padding-left: 1rem;
+}
+
+.menu {
+    padding-top: 2%;
+}
+
+>>>>>>> f8bb499 (merge etape 1)
 .sous_menu {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f8bb499 (merge etape 1)
 hr {
     border: 1px solid white;
     width: 100%;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f8bb499 (merge etape 1)
 .avantages_membres {
     width: 100%;
     text-align: center;
     padding-top: 3%;
 }
+<<<<<<< HEAD
 .partager {
+=======
+
+.partager {
+
+>>>>>>> f8bb499 (merge etape 1)
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 2%;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f8bb499 (merge etape 1)
 .membres {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 2%;
+<<<<<<< HEAD
 }
 .texte_partager {
     width: 70%;
 }
+=======
+  }
+
+.texte_partager {
+    width: 70%;
+}
+
+>>>>>>> f8bb499 (merge etape 1)
 .donnez_votre_avis {
     display: flex;
     flex-direction: column;
@@ -89,6 +155,7 @@ hr {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+<<<<<<< HEAD
 }
 .faites_nous_connaitre {
     display: flex;
@@ -107,6 +174,29 @@ hr {
     /********************** IPHONE 12 PRO ***********************/
 
 @media only screen 
+=======
+  }
+  
+  .faites_nous_connaitre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faites_nous_connaitre, .donnez_votre_avis {
+    width: 30%;
+  }
+
+  #submit {
+    background-color: #8B0000;
+    border: none;
+    width: 50%;
+  }
+  
+    /********************** IPHONE 12 PRO ***********************/
+
+  @media only screen 
+>>>>>>> f8bb499 (merge etape 1)
     and (device-width: 390px) 
     and (device-height: 844px) 
     and (-webkit-device-pixel-ratio: 3) {
@@ -135,7 +225,11 @@ hr {
         .sous_menu {
             flex-direction: column;
         }
+<<<<<<< HEAD
     }
+=======
+     }
+>>>>>>> f8bb499 (merge etape 1)
 
     /********************** IPHONE 12 PRO ***********************/
 
@@ -169,7 +263,11 @@ hr {
             /* width: 30%; */
             width: 40%;
         }
+<<<<<<< HEAD
     
+=======
+      
+>>>>>>> f8bb499 (merge etape 1)
     }
 
     /********************** IPAD PRO ***********************/

@@ -18,6 +18,7 @@ a:hover {
     color: #E02B1A;
 }
 
+<<<<<<< HEAD
 .effect_titles::after, .test::after {
     content: '';
     display: block;
@@ -35,6 +36,8 @@ a:hover {
     width: 6rem;
 }
 
+=======
+>>>>>>> f8bb499 (merge etape 1)
 .nom, .date_inscription {
     color: white;
     font-family: 'Montserrat', sans-serif;

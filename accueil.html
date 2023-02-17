@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/accueil.css">
+    <title>Luxury Kitchen</title>
+</head>
+
+<body>
+
+    <!-----------------------------------------------------Partie NAVBAR ---------------------------------------------------------------->
+    <nav>
+        <div id="navbar">
+            <div id="menu_left">
+                <h1 id="menu_logo">LUXURY KITCHEN</h1>
+            </div>
+            <div id="menu_center">
+                <ul id="menu_nav">
+                    <li><a href="">POÊLES</a></li>
+                    <li><a href="">VERRES</a></li>
+                    <li><a href="">ACCESSOIRES</a></li>
+                    <li><a href="">COUVERTS</a></li>
+                    <li><a href="">ASSIETTES</a></li>
+                    <li><a href="">MOULES ET PLAQUES</a></li>
+                </ul>
+            </div>
+            <div id="menu_right">
+                <div id="right_right">
+                    <a href="paniervide.html"><iconify-icon icon="ion:bag-handle-outline" width="40" height="40" class="show_not"></iconify-icon></a>
+                    <a href="login.html" class="user" data-toggle="modal" data-target="#exampleModal"><iconify-icon
+                            icon="ion:person-circle-outline" width="40" height="40" class="show_not"></iconify-icon></a>
+                    <iconify-icon icon="ion:menu" width="40" height="40" id="menu_icon"></iconify-icon>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--------------------------------------------------------------------- PARTIE SIDEBAR ------------------------------------------------->
+    <div id="sidebar_menu">
+        <div class="main_sidebar_content">
+            <div class="block_one">
+                <iconify-icon id="close_icon" icon="ion:close-outline" style="color: white;" width="50"
+                    height="50"></iconify-icon>
+            </div>
+            <div class="block_two">
+                <div id="sidebar_navigation">
+                    <ul id="side_nav_links">
+                        <li><a class="menu_text" href="">POÊLES</a></li>
+                        <li><a class="menu_text" href="">VERRES</a></li>
+                        <li><a class="menu_text" href="">ACCESSOIRES</a></li>
+                        <li><a class="menu_text" href="">COUVERTS</a></li>
+                        <li><a class="menu_text" href="">ASSIETTES</a></li>
+                        <li><a class="menu_text" href="">MOULES ET PLAQUES</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="block_three">
+                <p id="navbar_text">Devenez membre pour accéder au meilleur des produits.</p>
+            </div>
+            <div class="rejoindre-and-identifier">
+                <div class="rejoindre">
+                    <button id="rejoindre">Nous rejoindre</button>
+                </div>
+                <div class="identifier">
+                    <button id="identifier">S'identifier</button>
+                </div>
+            </div>
+            <div class="panier-commande-profil">
+                <div class="panier">
+                    <iconify-icon icon="ion:bag-handle-outline" style="color: white;" width="30"
+                        height="30"></iconify-icon>
+                    <h2>Panier</h2>
+                </div>
+                <div class="commande">
+                    <iconify-icon icon="ion:cart-outline" style="color: white;" width="30" height="30"></iconify-icon>
+                    <h2>Commande</h2>
+                </div>
+                <div class="profil">
+                    <iconify-icon icon="ion:person-circle-outline" style="color: white;" width="30"
+                        height="30"></iconify-icon>
+                    <h2>Profil</h2>
+                </div>
+            </div>
+            <div class="sidebar_socials">
+                <div class="socials">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                </div>
+                <div class="socials">
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                </div>
+                <div class="socials">
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- partie pop-up -->
+    <section class="popup">
+
+        <!---------------------------------------------Modal ---------------------------------------------------->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modall-content">
+                    <!-- <div class="modal-header"> 
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>-->
+                    <div class="modal-body">
+                        <div class="grpbtn">
+                            <a href="login.html" class="btn btn-primary">Identifiez-vous</a>
+                        </div>
+                        <div class="grptext">
+                            <p class="whitetext">Nouveau client ? <a href="#" class="new-text">Commencez-ici</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+    </section>
+
+    <!-- Fin Pop-up -->
+
+    <!-- Section Découvrez nos offres du moment-->
+    <section class="offer">
+        <div class="card-deck-wrapper ">
+            <div class="ttitle">
+                <h2> Découvrez nos offres du moment !</h2>
+            </div>
+            <div class="col-12 d-flex flex-wrap">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/poêle/Poele17.jpg" alt="Card image poele">
+                        <div class="card-description">
+                            <p class="card-info">SOLDES ! Poêles de cuisson</p>
+                            <div class="btn-promo">
+                                <a href="#" class="btn btn-danger">J'en profite !</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/moules/moule23.jpg" alt="Card image moule">
+                        <div class="card-description">
+                            <p class="card-info">SOLDES ! Moules et plaques</p>
+                            <div class="btn-promo">
+                                <a href="#" class="btn btn-danger">J'en profite !</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/accessoire/ustensile3.jpg" alt="Card image ustensile">
+                        <div class="card-description">
+                            <p class="card-info">SOLDES ! Ustensiles cuisine</p>
+                            <div class="btn-promo">
+                                <a href="#" class="btn btn-danger">J'en profite !</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card">
+                        <img class="card-img-top" src="images/verres/verre2.webp" alt="Card image verre">
+                        <div class="card-description">
+                            <p class="card-info">SOLDES ! Verres de Table</p>
+                            <div class="btn-promo">
+                                <a href="#" class="btn btn-danger">J'en profite !</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section à la une -->
+
+    <section class="one">
+        <div class="container-fluid">
+            <h2> À la Une</h2>
+            <div class=".row-cols-4">
+                <div class="scrollcards">
+                    <div class="card">
+                        <img class="card-img-top" src="images/accessoire/accessoire1.png" alt="Card image ustensile">
+                        <div class="card-block">
+                            <p class="card-title">Ensemble d'ustensiles de<br>cuisines 8 pièces en silicones</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">21,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/couverts/couvert2.png" alt="Card image couverts">
+                        <div class="card-block">
+                            <p class="card-title">8 pièces Couverts en Acier <br>Inoxydable</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">8,50€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/accessoire/couteau.webp" alt="Card image bloc couteaux">
+                        <div class="card-block">
+                            <p class="card-title">Lot bloc couteaux universel <br>noir et set de couteaux</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">20,00€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/poêle/poele2.webp" alt="Card image poêle">
+                        <div class="card-block">
+                            <p class="card-title">Set 3 poêles anti-adhésives et<br> manche amovible</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">45,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/accessoire/accessoire1.png" alt="Card image accessoire">
+                        <div class="card-block">
+                            <p class="card-title">Ensemble d'ustensiles de cuisines<br>8 pièces en silicones</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">21,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/couverts/couvert2.png" alt="Card image couverts">
+                        <div class="card-block">
+                            <p class="card-title">8 pièces Couverts en Acier <br>Inoxydable</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">8,50€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/accessoire/couteau.webp" alt="Card image couteaux">
+                        <div class="card-block">
+                            <p class="card-title">Lot bloc couteaux universel <br>noir et set de couteaux</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">20,00€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/poêle/poele2.webp" alt="Card image pôele">
+                        <div class="card-block">
+                            <p class="card-title">Set 3 poêles anti-adhésives et<br> manche amovible</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">45,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/accessoire/accessoire9.webp" alt="Card image lunch box">
+                        <div class="card-block">
+                            <p class="card-title">Set 3 lunch box en inox et<br> couvercles en plastiques</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">22,00€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/accessoire/accessoire6.jpg" alt="Card image mandoline">
+                        <div class="card-block">
+                            <p class="card-title">Gefu Mandoline VIOLINO</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">32,50€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Section Nos nouveautés -->
+    <section class="BrandNew">
+        <div class="container-fluid">
+            <h2> Nos nouveautés</h2>
+            <div class="row">
+                <div class="scrollcards">
+                    <div class="card">
+                        <img class="card-img-top" src="images/robot/blender.png" alt="Card image blender">
+                        <div class="card-block">
+                            <p class="card-title">Blender chauffant 2,5 L 2100 W <br>en verre et acier</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">119,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/poêle/poele12.webp" alt="Card image couverts">
+                        <div class="card-block">
+                            <p class="card-title">8 pièces Couverts en Acier <br>Inoxydable</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">22,50€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/robot/Robotcuiseur.png" alt="Card image robot">
+                        <div class="card-block">
+                            <p class="card-title">Robot cuiseur multifonction <br>4,5 L 1000 W </p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">399,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/accessoire/accessoire5.webp" alt="Card image appareil">
+                        <div class="card-block">
+                            <p class="card-title">Appareil à emballer sous vide <br>blanc 37 cm 150 W</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">58,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/robot/blender.png" alt="Card image blender">
+                        <div class="card-block">
+                            <p class="card-title">Blender chauffant 2,5 L 2100 W <br>en verre et acier</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">119,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/poêle/poele12.webp" alt="Card image pôele">
+                        <div class="card-block">
+                            <p class="card-title">8 pièces Couverts en Acier <br>Inoxydable</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">22,50€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/robot/Robotcuiseur.png" alt="Card image robot cuiseur">
+                        <div class="card-block">
+                            <p class="card-title">Robot cuiseur multifonction <br>4,5 L 1000 W</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">399,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/accessoire/accessoire5.webp" alt="Card image appareil">
+                        <div class="card-block">
+                            <p class="card-title">Appareil à emballer sous vide <br>blanc 37 cm 150 W</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">58,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="images/robot/blender.png" alt="Card image blender">
+                        <div class="card-block">
+                            <p class="card-title">Blender chauffant 2,5 L 2100 W <br>en verre et acier</p>
+                            <div class="cardprice">
+                                <a href="panier.html" class="bttn">Ajouter au panier</a>
+                                <p class="price">119,99€</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Partie footer -->
+    <footer>
+        <div class="container">
+            <div id="row">
+                <div id="left">
+                    <div id="contact_information">
+                        <h4 class="footer_titles">CONTACT INFORMATIONS</h4>
+                        <div id="infos">
+                            <ul>
+                                <div id="adresse">
+                                    <iconify-icon icon="ion:business-outline" style="color: white;" width="25"
+                                        height="25"></iconify-icon>
+                                    <li><a class="info_styling" href="#">3891 Ranchview Dr. Richardson, California 62639
+                                            USA</a>
+                                    </li>
+                                </div>
+                                <div id="number">
+                                    <iconify-icon icon="ion:call-outline" style="color: white;" width="25"
+                                        height="25"></iconify-icon>
+                                    <li><a class="info_styling" href="#">(603) 555-0123</a></li>
+                                </div>
+                                <div id="email">
+                                    <iconify-icon icon="ion:at-outline" style="color: white;" width="25"
+                                        height="25"></iconify-icon>
+                                    <li><a class="info_styling" href="#">georgia.young@example.com</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="center">
+                    <div id="decouvrer_application">
+                        <h4 class="footer_titles">DÉCOUVREZ L'APPLICATION</h4>
+                        <div class="app">
+                            <img src="images/image_page_compte/apple.png" alt="App Store">
+                            <img src="images/image_page_compte/google_play.png" alt="Play Store">
+                        </div>
+                    </div>
+                    <iconify-icon id="en_bas" icon="ion:arrow-up-circle-outline" style="color: white;" width="50"
+                        height="50"></iconify-icon>
+                </div>
+                <div id="right">
+                    <div id="rejoignez_nous">
+                        <h4 class="footer_titles">REJOIGNEZ-NOUS</h4>
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook fa-2xl"></i>
+                            <i class="fa-brands fa-twitter fa-2xl"></i>
+                            <i class="fa-brands fa-instagram fa-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/sidebar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,1030 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+@import "../node_modules/bootstrap/scss/functions";
+
+
+    *{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    font-family: 'Montserrat', sans-serif;
+    }
+
+  *, ::after, ::before {
+    box-sizing: none;
+}
+
+
+
+    body {
+    background-color: #1E1E1E;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* Partie Navbar */ 
+
+
+/***************** navbar *******************/
+#navbar {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(#E02B1A, #930D00);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+li, a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+#menu_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3%;
+    font-size: 18px;
+}
+#menu_logo, #menu_right {
+    color: white;
+}
+
+#menu_logo {
+    font-size: 2.3rem;
+}
+
+div#menu_center {
+    width: 60%;
+}
+#right_right {
+    display: flex;
+    gap: 40px;
+}
+#sidebar_menu {
+    display: none;
+}
+#menu_icon {
+    display: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/************** sidebar ****************/
+
+
+#sidebar_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 1092px;
+    background-color: #C81100;
+    z-index: 3;
+}
+.main_sidebar_content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#side_nav_links {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    gap: 4%;
+}
+.block_one {
+    display: flex;
+    justify-content: flex-end;
+}
+.block_two, .block_three {
+    margin: 5%;
+}
+#navbar_text {
+    color: rgba(255, 255, 255, 0.63);
+}
+a.menu_text {
+    font-size: 20px;
+}
+#close_icon {
+    margin: 3%;
+    color: white;
+}
+
+.panier-commande-profil h2 {
+    font-size: 24px;
+}
+
+
+.rejoindre-and-identifier {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10%;
+    margin: 5%;
+}
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.rejoindre {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 44px;
+    background-color: black;
+    color: white;
+    border-radius: 22px;
+}
+.identifier {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 35px;
+    border: 3px solid white;
+    color: white;
+    border-radius: 22px;
+}
+.panier-commande-profil {
+    display: flex;
+    height: 13%;
+    margin: 5%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.panier, .commande, .profil {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 3%;
+}
+.sidebar_socials {
+    display: flex;
+    height: 3%;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}       
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    color: white !important;
+}
+
+.fa-2xl {
+    font-size: 2em;
+    line-height: normal;
+    vertical-align: -0.1875em;
+}
+
+
+/*********** MEDIA QUERY *************/
+
+/* Mobile Under 250px */
+@media (max-width: 250px){
+    .panier-commande-profil {
+        width: 90%;
+        height: 18%;
+    }
+    .panier, .commande, .profil {
+        font-size: 12px;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* Mobile */
+@media (max-width:767px) {
+    div#menu_center {
+        display: none;
+    }
+    #sidebar_menu.active {
+        display: block;
+    }
+    #sidebar_navigation {
+        height: 20%;
+    }
+    #side_nav_links {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        gap: 10%;
+    }
+    .show_not {
+        display: none;
+    }
+    #menu_icon {
+        display: contents;
+    }
+    li {
+        margin-top: 1em;
+    }
+    #navbar_text {
+        width: 90%;
+    }
+}
+
+/* Ipad Mini to ipad */
+@media screen and (min-width:768px) and (max-width:991px){
+    #navbar {
+        width: 100%;
+        align-items: center;
+        align-content: space-around;
+    }
+    div#menu_center {
+        display: none;
+    }
+    #menu_icon {
+        display: contents;
+    }
+    #sidebar_menu.active {
+        display: block;
+        width: 60%;
+    }
+}
+
+/* Ipad et Mini Ordi */
+@media screen and (min-width:992px) and (max-width:1199px) {
+    #navbar {
+        width: 100%;
+        align-items: center;
+        align-content: space-around;
+    }
+    #menu_icon {
+        display: contents;
+    }
+    #sidebar_menu.active {
+        display: block;
+        width: 35%;
+    }
+    #menu_center {
+        display: none;
+    }
+}
+/* Ordi to UP */
+@media screen and (min-width: 1200px) {
+    #navbar {
+        width: 100%;
+        align-items: center;
+        align-content: space-around;
+    }
+    #menu_icon {
+        display: contents;
+    }
+    #sidebar_menu {
+        display: none;
+    }
+    #menu_icon {
+        display: none;
+    }
+
+    #menu_logo {
+    font-size: 1.3rem;
+    }
+    #menu_nav {
+    
+    font-size: 16px;
+    }
+    
+}
+
+
+
+
+/* Les Titres  */
+    h2 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+
+    h5{
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    }
+
+
+    section{
+    margin-top: 40px;
+}
+
+
+
+
+/* Partie Modal pour s'identifier */
+
+.modal {
+    position: fixed;
+    top: 42px;
+    left: 31vw;
+    display: none;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+
+.modal-dialog {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+    background-color:  #595959;
+    border-radius: 10px;
+    height: 14vh;
+    width: 20vw;
+
+}
+
+
+.modall-content {
+    background-color:  #595959;
+    color: white;
+    border-radius: 10px;
+    right: 15vw;
+}
+
+p.whitetext {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a.new-text {
+    color: #E02B1A;
+    font-weight: 800;
+
+}
+
+.modal .fade{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 11px;
+}
+
+img.card-img-top.imgmodal {
+    height: 21vw;
+    width: 23vw;
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-radius: 10px;
+    border-bottom: none;
+
+}
+
+.btn-primary {
+    background-color: #E02B1A;
+    border-color: #E02B1A;
+    border-width : 0;
+    border-style : none;
+    font-size: 18px;
+    font-family:'Montserrat', sans-serif;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #E02B1A;
+    border-color: #E02B1A;
+    font-size: 18px;
+    border-width : 0;
+    border-style : none;
+}
+
+.btn-primary:onclick {
+    color: #fff;
+    background-color: #E02B1A;
+    border-width : 0;
+    border-style : none;
+    font-size: 18px;
+}
+
+
+.card-modal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 41px;
+    height: 100%;
+    
+}
+
+.titre {
+    height: 7%;
+}
+
+
+
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+    border: none;
+}
+
+.close {
+    float: right;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 0.5;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 1px 0 #fff;
+    opacity: 2.5; 
+}
+
+.close:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    opacity: 2.5;
+    }
+
+h5.card-title {
+    font-size: 30px;
+}
+
+
+
+
+
+  /****************************************************** Carousel à la une  **************************************************************/
+
+    .card {
+    /* border: 2px solid red; */
+    margin: 10px 4px;
+    transition: .6s ease;
+    background-color: #1E1E1E;
+    width : 100%
+    }
+    
+
+    .card:hover {
+    transform: scale(1.05);
+    border-radius: 10px;
+    }
+
+.card-block {
+
+    background-color: #595959;
+    color: #fff;
+    padding: 10px;
+    height: 140px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
+
+img {
+    width:100%;
+    height:auto;
+    }
+
+.card-img-top{
+    width:100%;
+    height:auto;
+    }
+
+.scrollcards {
+    background-color: #1E1E1E;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    }
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    }
+
+
+div.scrollcards .card {
+    display: inline-block;
+    padding: 14px;
+    text-decoration: none;
+    height: auto; 
+    width: 300px;
+    border: none;
+    background-color: #1E1E1E;
+    }
+
+
+
+a.bttn {
+    background-color: #E02B1A;
+    border:  3px solid #E02B1A;
+    box-shadow: 2px 2px 2px 2px #343a40;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 14px;
+    margin-bottom: 19px;
+    padding: 4px;
+    }
+
+a.bttn:hover {
+    color: #fff;
+    }
+
+
+.cardprice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    }
+
+.price {
+    margin-top: 20px;
+    margin-right: 12px;
+    }
+
+
+p.card-title {
+    font-size: 16px;
+    }
+
+/*************************************************************************** decouverte ****************************************************/
+
+.card-deck-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2px;
+    margin-left: 19px;
+    gap: 10px;
+    }
+
+
+.card-deck {
+    width: 100%;
+    /* margin-right: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    gap: 20px; */
+    }   
+
+
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #595959;
+    color: #fff;
+    padding: 2%;
+    height: 15vh;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+.card-description:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
+
+
+.btn-danger {
+    color: #fff;
+    background-color: #E02B1A;
+    border-color: #E02B1A;
+    border-radius: 5px;
+    }
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #E02B1A;
+    border-color: #E02B1A;
+    border-radius: 5px;
+    }
+
+.btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle {
+    color: #fff;
+    background-color:  #E02B1A;
+    border-color: #E02B1A;
+    }
+
+.btn-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    border-radius: 5px;
+}
+
+
+.card-info {
+    display: flex;
+    align-items: center;
+    width: 88%;
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+a.btn.btn-danger {
+    font-size: 22px;
+    font-weight: 600;
+    height: 6vh;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 2px 2px 2px 2px #404040;
+
+}
+
+.card-img-top {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+
+
+
+
+/* Partie Footer */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 300px;
+    background-color: #1E1E1E;
+}
+
+div#row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#left, #center, #right {
+    width: 30%;
+    height: 290px;
+}
+
+#center, #right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_titles{
+    color: white;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    width: 60px;
+    padding-top: 3px;
+    border-bottom: 2px solid red;
+}
+
+.info_styling {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+li {
+    padding-bottom: 0%;
+}
+ul {
+    padding-left: 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.fa-facebook, .fa-twitter, .fa-instagram {
+    color: red;
+}
+
+#adresse, #number, #email {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+iconify-icon {
+    padding-right: 10px;
+}
+
+#en_bas {
+    padding-top: 20%;
+}
+
+
+/************************************************RESPONSIVE MOBILE*************************************************************/
+
+@media screen and (max-width: 320px) {
+
+    a.btn.btn-danger {
+    font-size: 15px;
+    height: 5vh;
+
+    }
+    
+    h2 {
+    font-size: 16px;
+    }
+
+    .ttitle {
+    margin-left: 7%;
+    }
+
+    }
+
+
+
+    @media screen and(max-width: 576) {
+
+    h2 {
+    font-size: 29px;
+    width: 90%;
+    height: 6vh;
+    margin-left: 3%;
+
+    }
+
+    .card-description {
+
+    height: 18vh;
+    }
+    
+    a.btn.btn-danger {
+    font-size: 17px;
+    height: 5vh;
+    }
+
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    h2 {
+    font-size: 30px;
+    }
+        
+
+    .card-info {
+    font-size: 16px;
+    
+    }
+
+    .card-deck-wrapper {
+    width: 100%;
+    margin-right: 2%;
+    margin-left: 0;
+    }
+
+    
+
+    .card-deck {
+    margin-right: 0;
+    display: flex;
+    width: 100%;
+    }
+
+/* partie pop-up user */
+
+    .modal {
+    
+    top: 69px;
+    left: 21vw;
+
+    }
+
+    .modal-dialog {
+
+    height: 17vh;
+    width: 48vw;
+    }
+
+    .btn-primary {
+
+    font-size: 12px;
+
+    }
+}
+
+
+
+
+/**************************************************************RESPONSIVE IPAD************************************************************/
+
+ /* Ipad Mini to ipad */
+
+    @media screen and (min-width:768px) and (max-width:991px) {
+
+
+
+    /* Partie Navbar */
+
+    div#menu_center {
+    display: none;
+    }
+
+    #menu_icon {
+    display: block;
+    }
+
+    /* Partie Card */
+
+    .card-info {
+    font-size: 15px;
+    height: 4vh;
+    
+    }
+
+    .btn-promo {
+    height: 6vh;
+    }
+
+    a.btn.btn-danger {
+        font-size: 18px;
+        height: 6vh;
+    }
+
+    .card-deck-wrapper {
+    margin-right: 2%;
+    margin-left: 4%;
+    gap: 10px;
+    }
+
+    .card-description {
+    height: 18vh;
+
+    }
+
+    /* Partie Pop-up */
+
+    .modal-dialog {
+    height: 15vh;
+    width: 45vw;
+    }
+
+    .modal {
+    
+    top: 46px;
+    left: 9vw;
+
+    }
+
+    .btn-primary {
+    
+    font-size: 15px
+    }
+
+    }
+
+    
+
+/*********************************************************MINI ORDI****************************************************************************/
+
+ /* Ipad et Mini Ordi */
+@media screen and (min-width:992px) and (max-width:1100px) {
+
+
+
+    .card-info {
+        font-size: 16px;
+    }
+
+
+    .card-deck {
+        margin-right: 3%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        }
+
+    .modal-dialog {
+    height: 15vh;
+    width: 34vw;
+    }
+
+    .modal {
+    
+    top: 45px;
+    left: 13vw
+    }
+
+    .btn-primary {
+    font-size: 14px;
+
+    }
+
+    }
+
+/****************************************************RESPONSIVE ORDINATEUR & PLUS*********************************************************/
+
+ /* Ordi to UP */
+@media screen and (min-width: 1101px) {
+
+
+.card-info {
+    font-size: 16px;
+}
+
+.card-description {
+    height: 18vh;
+}
+
+a.btn.btn-danger {
+    font-size: 20px;
+}
+
+/* Partie Pop-up */
+.modal {
+    top: 46px;
+    left: 27vw;
+    }
+
+.modal-dialog {
+    height: 15vh;
+    width: 28vw;
+    }
+
+    .btn-primary {
+
+    font-size: 14px;
+    }
+
+    .modal-dialog {
+    height: 15vh;
+    width: 32vw;
+    }
+
+    .modal {
+    top: 45px;
+    left: 14vw;
+    }
+
+}
+
+
+@media screen and(min-width: 1200px) {
+    .container {
+    max-width: 1679px;
+    }
+
+}
