@@ -1,4 +1,3 @@
-/**** NAVBAR.CSS *****/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 * {
@@ -158,7 +157,7 @@ a {
 a:hover {
     color: white;
 }
-.container {
+.all {
     display: flex;
     width: 100%;
     height: 350px;
