@@ -9,13 +9,19 @@ body {
 
 h3 {
     color: white;
-    margin-left: 39px;
+    margin-left: 2%;
     font-weight: bold;
-}
+    font-size: 1.75rem;
+    height: 20vh;
+    width: 100%;
+
+    }
 
 h5.card-titre {
-  font-size: 28px;
-  font-weight: bold;
+    font-size: 28px;
+    font-weight: bold;
+    height: 6vh;
+    width: 100%;
 }
 
 
@@ -193,7 +199,7 @@ button {
 /*********** MEDIA QUERY *************/
 
 /* Mobile Under 250px */
-@media (max-width: 250px){
+@media screen and (max-width: 250px){
     .panier-commande-profil {
         width: 90%;
         height: 18%;
@@ -206,7 +212,7 @@ button {
 }
 
 /* Mobile */
-@media (max-width:767px) {
+@media screen and (max-width:767px) {
     div#menu_center {
         display: none;
     }
@@ -298,15 +304,15 @@ button {
 
 #exampleModal{
     position: fixed;
-    top: 42px;
-    left: 31vw;
+    top: 59px;
+    left: 38vw;
     display: none;
     z-index: 1050;
     width: 100%;
     height: 100%;
     overflow: hidden;
     outline: 0;
-}
+    }
 
 
 .modal-dialog.piou {
@@ -320,20 +326,33 @@ button {
     align-items: center;
 
 
-}
+    }
 
 
 .modall-content {
-    background-color:  #595959;
+    /* background-color:  #595959; */
     color: white;
     border-radius: 10px;
-    right: 15vw;
-}
+    right: 1vw;
+    bottom: 1vw;
+    position: absolute;
+    }
+
+.grpbtn {
+    display: flex;
+    align-items: center;
+    height: 3vh;
+    width: 73%;
+    justify-content: center;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    }
+
 
 p.whitetext {
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-}
+    }
 
 a.new-text {
     color: #E02B1A;
@@ -376,9 +395,13 @@ img.card-img-top.imgmodal {
     border-width : 0;
     border-style : none;
     font-size: 18px;
+    width: 100%;
+    height: 4vh;
+    text-align: center;
     font-family:'Montserrat', sans-serif;
     border-radius: 10px;
     text-transform: uppercase;
+
 }
 
 .btn-secondary:hover {
@@ -386,6 +409,9 @@ img.card-img-top.imgmodal {
     background-color: #E02B1A;
     border-color: #E02B1A;
     font-size: 18px;
+    width: 100%;
+    height: 4vh;
+    text-align: center;
     border-width : 0;
     border-style : none;
 }
@@ -454,71 +480,176 @@ h5.card-title {
     border: none;
     background-color: #1e1e1e;
     color: white;
-
+    width: 100%;
+    height: 62vh;
     }
 
 
     .card-cart img {
     width: 22%;
-    margin-left: 40px;
+    margin-left: 5%;
     border-radius: 10px;
-    height: 400px;
-    margin-top: 46px;
+    height: 55vh;
+    margin-top: 2%;
+    }
+
+    .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    width: 78%;
+    height: 46vh;
+    }
+
+
+    
+
+
+    .productinfo {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 89%;
+    height: 10vh;
+    font-weight: 600;
+    font-size: 22px;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+
+    .btncart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 18vh;
+    gap: 80px;
+    border: none;
+    }
+
+.delivertext {
+    width: 93%;
+    height: 5vh;
+    }
+
+
+
+a.btn.btn-danger:hover {
+    background-color: #E02B1A;
 
     }
+
+.btn-dark {
+    color: #fff;
+    background-color:  #E02B1A;
+    border-color: #E02B1A;
+    border-radius: 10px;
+    }
+
+
+a.btn.btn-dark {
+    font-weight: 600;
+    font-size: 23px;
+    background-color:  #E02B1A;
+    border: none;
+    }
+
+a.btn.btn-dark:hover {
+    background-color:  #E02B1A;
+    border: none;
+    }
+
+.btn-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle {
+    color: #fff;
+    background-color: #E02B1A;
+    border: none;
+    }
+
+
+p.card-text-cart {
+    text-align: justify;
+    width: 95%;
+    height: 15vh;
+    }
+    
+
+
+
+
+p.card-info {
+    font-size: 1.1rem;
+    }
+
+
+
+
+    /* Partie offre similaires */
     
 .card {
     /* border: 2px solid red; */
-    margin: 10px 4px;
+    
     transition: .6s ease;
     background-color: #1E1E1E;
-  }
-  
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    }
+
+
     .card:hover {
     transform: scale(1.05);
-  }
+    }
 
-.card-deck-wrapper {
-    margin-right: 2px;
-    margin-left: 19px;
-}
 
-.card-deck {
-    margin-right: 3px;
-}
+    .card-deck-wrapper {
+    margin-right: 2%;
+    margin-left: 2%;
+    display: flex;
+    height: 24vh;
+    width: 100%;
+    }
 
-.card-body {
-  font-size: 18px;
-  margin-top: 1vw;
-}
 
-.card-description {
 
+    .card-description {
+    display: flex;
+    flex-direction: column;
     background-color: #595959;
     color: #fff;
-    padding: 14px;
-    height: 100px;
+    padding: 10px;
+    height: 19vh;
+    width: 100%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     font-family: 'Montserrat', sans-serif;
-}
+    }
 
 .card-img-top {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 
-}
+    }
 
 .card-info {
-    font-size: 16px;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    /* text-align: center; */
+    text-align: center;
     font-weight: 600;
     margin-right: 40px;
-}
+    }
 
-.offer{
-margin-top: 43px;
+.offer {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 100%;
+    height: 20vh;
+    margin-top: 2%;
 }
 
 
@@ -536,13 +667,14 @@ margin-top: 43px;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-}
+    width: 100%;
+    height: 20vh;
+    }
 
 .price {
     margin-top: 7px;
-    font-size: 22px;
-    width: 20%;
-  }
+    font-size: 17px;
+    }
 
 
 a.btn.btn-danger {
@@ -555,77 +687,13 @@ a.btn.btn-danger {
 
 }
 
-.productinfo {
- 
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
-  font-weight: 600;
-  font-size: 22px;
-  margin-top: 50px;
-}
-  
-
-
-.delivertext {
-  width: 93%;
-}
-
-
-
 a.btn.btn-danger:hover {
     background-color: #E02B1A;
 
 }
 
-.btn-dark {
-  color: #fff;
-  background-color:  #E02B1A;
-  border-color: #E02B1A;
-  border-radius: 10px;
-}
 
 
-a.btn.btn-dark {
-  font-weight: 600;
-  font-size: 23px;
-  background-color:  #E02B1A;
-  border: none;
-}
-
-a.btn.btn-dark:hover {
-  background-color:  #E02B1A;
-  border: none;
-}
-
-.btn-dark:not(:disabled):not(.disabled).active, .btn-dark:not(:disabled):not(.disabled):active, .show>.btn-dark.dropdown-toggle {
-    color: #fff;
-    background-color: #E02B1A;
-    border: none;
-}
-
-
-p.card-text-cart {
-  text-align: justify;
-  margin-right: 8vw;
-  margin-top: 22px;
-}
-
-.btncart {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  gap: 60px;
-  border: none;
-}
-
-
-p.card-info {
-  font-size: 1.1rem;
-}
 
 
 /* Partie Modal description produit*/
@@ -714,12 +782,12 @@ img.card-img-top.imgmodal {
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #1e1e1e;
-  border-color: #1e1e1e;
-  font-size: 18px;
-  border-width : 0;
-  border-style : none;
+    color: #fff;
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+    font-size: 18px;
+    border-width : 0;
+    border-style : none;
 }
 
 .btn-primary:onclick {
@@ -742,12 +810,15 @@ img.card-img-top.imgmodal {
 }
 
 .titre {
-  height: 7%;
+    height: 7%;
 }
 
 .pprice {
-  height: 80%;
-}
+    height: 80%;
+    margin-top: 5%;
+    font-size: 20px;
+
+    }
 
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
@@ -768,41 +839,211 @@ img.card-img-top.imgmodal {
 }
 
 .close:hover {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  opacity: 2.5;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    opacity: 2.5;
 }
 
 h5.card-title {
-  font-size: 30px;
+    font-size: 30px;
 }
 
-p.price.prix {
-  font-size: 24px;
-  font-family:'Montserrat', sans-serif;
+p.price-prix {
+    font-size: 24px;
+    font-family:'Montserrat', sans-serif;
 }
 
 
-/* Responsive */
+/****************************************************************** Responsive ****************************************************************/
 
 
+/* Mobile */
+    @media screen and (max-width:767px) {
 
-@media only screen and (max-width: 768px) {
-  a {
-    display: none;
-  }
-  .card-body {
-    padding: 0.5em 1.2em;
-  }
-  .card-body .card-text {
-    margin: 0;
-  }
-  .card img {
-    width: 50%;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .card img {
+    h5.card-titre {
+    font-size: 26px;
+    }
+
+.card-cart img {
+ 
     width: 40%;
-  }
+
+    height: 60vh;
+
+    }
+
+.card-body {
+
+    width: 77%;
+    height: 65vh;
+    }
+
+.productinfo {
+    
+    height: 8vh;
+    font-size: 15px;
+    }
+
+.btncart {
+
+    width: 100%;
+    height: 2vh;
+    gap: 70px;
+    }
+
+a.btn.btn-dark {
+ 
+    font-size: 8px;
+    height: 4vh;
+    }
+p.card-text-cart {
+  
+    height: 51vh;
+    font-size: 15px;
+    }
+
+.card {
+ 
+    width: 100%;
+    height: 80vh;
+    }
+
+.card-description {
+
+    height: 22vh;
+    }
+
+    }
+
+/* Partie Pop-up user */
+
+div#menu_center {
+  
+    display: none;
 }
+
+#exampleModal {
+
+    top: 42px;
+    left: 15vw;
+
+    }
+
+.modal-dialog.piou {
+    
+    height: 17vh;
+    width: 46vw;
+    }
+
+.btn-secondary {
+    
+    font-size: 16px;
+    }
+
+
+
+ /* Ipad Mini to ipad */
+    @media screen and (min-width:768px) and (max-width:991px){
+ 
+    .card-cart img {
+    width: 40%;
+    height: 57vh;
+    }
+
+    .card-body {
+    width: 60%;
+    height: 61vh;
+    }
+
+    p.card-text-cart {
+    
+    width: 100%;
+    height: 42vh;
+    font-size: 14px;
+    }
+
+    h5.card-titre {
+    font-size: 23px;
+    height: 5vh;
+    }
+
+    .productinfo {
+    width: 97%;
+    height: 7vh;
+    font-size: 16px;
+    }
+
+    .btncart {
+    width: 100%;
+    height: 3vh;
+    }
+
+    a.btn.btn-dark {
+    font-size: 13.7px;
+    }
+
+    #exampleModal {
+    top: 53px;
+    left: 10vw;
+    }
+
+    .modal-dialog.piou {
+    height: 16vh;
+    width: 41vw;
+    }
+
+    .btn-secondary {
+    font-size: 15px;
+    width: 85%;
+    height: 5vh;
+
+    }
+
+    .offer {
+    
+    height: 36vh;
+    }
+
+    h3 {
+    margin-left: 5%;
+    }
+
+    .card-deck-wrapper {
+    
+    height: 25vh;
+    }
+
+    .card-description {
+    
+    height: 25vh;
+
+    }
+
+    p.card-info {
+    font-size: 0.8rem;
+    text-align: center;
+    }
+
+    a.btn.btn-danger {
+    font-size: 9px;
+    height: 5vh;
+    width: 61%;
+    
+    }
+
+    .price {
+    margin-top: 5%;
+    font-size: 14px;
+    }
+
+    }
+
+
+ /* Ipad et Mini Ordi */
+ @media screen and (min-width:992px) and (max-width:1199px) {
+ 
+ }
+ /* Ordi to UP */
+ @media screen and (min-width: 1200px) {
+ 
+ }
