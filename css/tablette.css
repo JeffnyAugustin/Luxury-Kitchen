@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Ipad Mini to ipad */
+@media screen and (min-width:768px) and (max-width:991px){
+    #navbar {
+        width: 100%;
+        align-items: center;
+        align-content: space-around;
+    }
+    div#menu_center {
+        display: none;
+    }
+    #menu_icon {
+        display: contents;
+    }
+    #sidebar_menu.active {
+        display: block;
+        width: 60%;
+    }
+    div#row {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    div#decouvrer_application {
+        height: 89%;
+        align-items: center;
+        /* justify-content: space-evenly; */
+    }
+    .app {
+        width: 60%;
+        height: 80%;
+        flex-direction: column;
+    }
+    #center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 35%;
+        height: 290px;
+    }
+}
+
+/* Ipad et Mini Ordi */
+@media screen and (min-width:992px) and (max-width:1199px) {
+    #navbar {
+        width: 100%;
+        align-items: center;
+        align-content: space-around;
+    }
+    #menu_icon {
+        display: contents;
+    }
+    #sidebar_menu.active {
+        display: block;
+        width: 35%;
+    }
+    #menu_center {
+        display: none;
+    }
+}

@@ -18,6 +18,23 @@ a:hover {
     color: #E02B1A;
 }
 
+.effect_titles::after, .test::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 273px;
+    width: 0;
+    border-bottom: 5px solid red;
+    transition: 0.25s;
+}
+
+.effect_titles:hover::after {
+    width: 10rem;
+}
+.test:hover::after {
+    width: 6rem;
+}
+
 .nom, .date_inscription {
     color: white;
     font-family: 'Montserrat', sans-serif;

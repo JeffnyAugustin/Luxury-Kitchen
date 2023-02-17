@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Mobile Under 250px */
+@media (max-width: 250px){
+    /**** NAVBAR ****/
+    .panier-commande-profil {
+        width: 90%;
+        height: 18%;
+    }
+    .panier, .commande, .profil {
+        font-size: 12px;
+        width: 100%;
+        flex-direction: column;
+    }
+    /**** NAVBAR ****/
+}
+
+/* Mobile */
+@media (min-width: 251px) and (max-width:767px) {
+    /**** NAVBAR ****/
+    div#menu_center {
+        display: none;
+    }
+    #sidebar_menu.active {
+        display: block;
+    }
+    #sidebar_navigation {
+        height: 20%;
+    }
+    #side_nav_links {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        gap: 10%;
+    }
+    .show_not {
+        display: none;
+    }
+    #menu_icon {
+        display: contents;
+    }
+    li {
+        margin-top: 1em;
+    }
+    #navbar_text {
+        width: 90%;
+    }
+    /**** NAVBAR ****/
+
+    /**** FOOTER ****/
+    div#left {
+        display: none;
+    }
+    div#row {
+        width: 100%;
+    }
+    #right {
+        /* justify-content: space-between; */
+        width: 40%;
+        height: 100px;
+    }
+    #center {
+        justify-content: center;
+        width: 75%;
+        height: 189px;
+        align-items: center;
+    }
+    .app {
+        width: 30%;
+        flex-direction: column;
+    }
+    div#rejoignez_nous {
+        height: 100%;
+    }
+        /**** FOOTER ****/
+}
